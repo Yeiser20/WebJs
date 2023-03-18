@@ -19,12 +19,12 @@ controller.guardar = (req,res) => {
     const data =req.body;
     console.log(req.body);
     req.getConnection((err,conn)=>{
-        conn.query('INSERT INTO persona VALUES(36,\''+data.nombre+'\',\''+data.pApellido+'\',\''+data.sApellido+'\',\''+data.fechaNac+'\',\''+data.genero+'\','+parseInt(data.pais)+','+parseInt(data.estado)+','+parseInt(data.colonia)+','+parseInt(data.municipio)+','+parseInt(data.calle)+','+parseInt(data.noExterior)+','+parseInt(data.noInterior)+','+parseInt(data.cp)+',\''+data.edoCivil+'\',\''+data.email+'\','+parseInt(data.tel)+','+parseInt(data.telcel)+',\''+data.curp+'\',\''+ data.nacionalidad+'\',\'NULL\');',(err,clientes)=> {
+        conn.query('INSERT INTO persona VALUES(37,\''+data.nombre+'\',\''+data.pApellido+'\',\''+data.sApellido+'\',\''+data.fechaNac+'\',\''+data.genero+'\','+parseInt(data.pais)+','+parseInt(data.estado)+','+parseInt(data.colonia)+','+parseInt(data.municipio)+','+parseInt(data.calle)+','+parseInt(data.noExterior)+','+parseInt(data.noInterior)+','+parseInt(data.cp)+',\''+data.edoCivil+'\',\''+data.email+'\','+parseInt(data.tel)+','+parseInt(data.telcel)+',\''+data.curp+'\',\''+ data.nacionalidad+'\',\'NULL\');',(err,clientes)=> {
             if(err){
                 res.json(err);
                 res.send("error")
             }
-            res.render('FormAltas',{
+            res.render('login',{
             });
         });
     });
