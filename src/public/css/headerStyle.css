@@ -1,0 +1,48 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+
+}
+.logoPrincipal{
+    width: 15rem;
+    height: 4rem;
+    margin: 0px 50px;
+    
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+    color: black;
+}
+
+.nav-link, .dropdown-item{
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+
+}
+.nav-link:hover, .dropdown-item:hover{
+    border-radius: 10px;
+    background-color: #f4a024;
+    color: azure;
+}
+.nav-link:focus{
+    color: #0a9961;
+}
+.dropdown-menu{
+    background-color: #39d6a6;
+    border-radius: 5px;
+    padding: 0px;
+
+}
+.font-weight-bold{
+    text-align: center;
+}
+.ImagenLogo ,.dropdown-item {
+text-align: center;
+border-bottom: 1px solid gray;
+padding: 10px 10px;
+display: block;
+}
+.footer{
+    background-color: #01010a;
+}

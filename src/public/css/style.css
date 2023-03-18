@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+
+}
+body{
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=3006&resolucion=3840x2160);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background:linear-gradient(to right, #234a91,#912077);*/
+}
+
+.logoPrincipal{
+    width: 15rem;
+    height: 4rem;
+    margin: 0px 50px;
+    
+}
+.titulo{
+    color: #ff9a02;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.vianco{
+    font-family: 'Abril Fatface', cursive;
+    color: #0a9961;
+    font-size: 30px;
+}
+.lab{
+    font-family: 'Abril Fatface', cursive;
+    color: #99740a;
+    font-size: 30px;
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+    color: black;
+}
+
+.nav-link, .dropdown-item{
+    color: white;
+    font-family: 'Prompt', sans-serif;
+
+}
+.nav-link:hover, .dropdown-item:hover{
+    border-radius: 10px;
+    background-color: #f4a024;
+    color: azure;
+}
+.nav-link:focus{
+    color: #0a9961;
+}
+
+.container{
+
+    margin: 0 auto;
+}
+.contenido{
+    margin: 20%;
+
+}
+.contenido h1{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+
+.contenido h2{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.img-logo{
+    width: 150px;
+}
+.font-weight-bold{
+    text-align: center;
+}
+.ImagenLogo ,.dropdown-item {
+text-align: center;
+}
+.footer{
+    background-color: #01010a;
+}
+.dropdown-menu{
+    background-color: #01010a;
+    border-radius: 5px;
+    border: 2px solid #f4a024;
+
+}
+.ec1{
+    background-color: #99740a;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 500px;
+}
+.carousel-inner{
+    height: 500px;
+}

@@ -1,0 +1,22 @@
+
+body{
+    background-image: url(https://vianco.uaemex.mx/wp-content/uploads/2021/03/vianco01.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+ }
+ .container {
+     margin-top: 2rem;
+     background-color: white;
+     box-shadow: 0px 0px  10px 2px black; 
+     border-radius: 10px;
+     margin-bottom: 2rem;
+     padding: 3rem;
+ }
+ 
+ .btns{
+     text-align: center;
+ }
+ h1{
+     text-align: center;
+ }
+ 
