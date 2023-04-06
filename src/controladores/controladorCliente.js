@@ -7,12 +7,52 @@ controller.list = (req,res) => {
                 res.json(err);
             }
             console.log(clientes);
-            res.render('FormAltas',{
+            res.render('Login');
+        });
+    })
+};
+
+
+controller.consultar = (req,res) => {
+    req.getConnection((err,conn) => {
+        conn.query('SELECT * FROM persona p WHERE email_personal = \'archundiadaniel17@gmail.com\';',(err,clientes) =>{
+            if(err){
+                res.json(err);
+            }
+
+            console.log(clientes);
+            res.render('3evaluacion',{
                 data: clientes
             });
         });
     })
 };
+
+
+controller.logear = (req,res) => {
+    const data =req.body;
+    console.log(req.body);
+    
+    req.getConnection((err,conn) => {
+            conn.query('SELECT * FROM persona p WHERE email_personal = \''+data.email+'\';',(err,clientes) =>{
+                data2 : clientes;
+                if(err){
+                    res.render('Login');
+                    alert("Datos Incorrectos");
+                }
+                console.log(clientes)
+                if(data.email == clientes[0].email_personal){
+                    res.render('Principal',{
+                        data: clientes
+                    });
+                    console.log(clientes);
+                }else{
+                res.render('Login');}
+            });
+    })
+};
+
+
 
 
 controller.guardar = (req,res) => {
@@ -29,5 +69,6 @@ controller.guardar = (req,res) => {
         });
     });
 }
+
 
 module.exports = controller;

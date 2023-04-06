@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/styleLogin.css">
+    <link rel="shortcut icon" href="https://vianco.uaemex.mx/wp-content/uploads/2020/05/vianco13about-360x239.png" type="image/x-icon">
+</head>
+<body>
+    <div class="encabezado">
+    <img src="https://vianco.uaemex.mx/wp-content/uploads/2020/05/vianco13about-360x239.png" alt="">
+    <h1>Iniciar sesion</h1>
+    </div>
+    <nav class="contenedor">
+        <form action="/logear" method="post">
+            <div class="text">
+            <label for="">Correo Electronico</label>
+            <br>
+            <input type="email" name="email" required placeholder="example@algo.com">
+            </div>
+            <div class="text">
+                <label for="">Contraseña</label>
+                
+                <br>
+                <input type="password" name="password" required placeholder="8-15 caracteres" minlength="8" maxlength="15">
+            </div>    
+            <input type="submit" class="boton" value="Iniciar sesion">
+        </form>
+    </nav>
+    <nav class="nosesion">
+        <label for="">¿No tienes cuenta?, <br> inicia sesion como <a href="">Invitado</a></label>
+    </nav>
+    
+</body>
+</html>

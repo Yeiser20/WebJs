@@ -1,0 +1,97 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+
+body{
+    background: linear-gradient(70deg,#12BF78,#11B2EA);
+}
+.encabezado{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 170px;
+    width: 300px;
+}
+.encabezado img{
+    height: 100px;
+    width: 150px;
+    margin: 0px;
+    padding: 5px 0px;
+}
+.encabezado h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contenedor{
+    position: relative;
+    margin: 0 auto 15px;
+    height: 200px;
+    width:300px;
+    background-color: #E5E9F4;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 5px;
+}
+.text{
+    text-align: justify;
+    position: relative;
+    margin: 0px 20px;
+    padding: 5px 0px;
+}
+.text label{
+    margin: 20px 0px;
+}
+.text input{
+    position: relative;
+    width: 260px;
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.nosesion{
+    position: relative;
+    margin: 0 auto ;
+    height: 20px;
+    width:300px;
+    background-color: #E5E9F4;
+    padding: 20px 30px 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px; 
+}
+.nosesion a{
+    color: darkblue;
+    font-weight: bold;
+}
+.text input:focus{
+    border: 4px solid darkcyan;
+    transition: 0.05s;
+}
+
+.boton{
+    width: 260px;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 10px 3px 2px 3px;
+    background-color: #AD8106;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #765907;
+    font-weight: bold;
+    cursor: pointer;
+}
+

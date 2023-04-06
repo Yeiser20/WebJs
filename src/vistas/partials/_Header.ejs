@@ -15,37 +15,36 @@
 
                 <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-between">
                     <ul class="navbar-nav ms-5 ">
-                        <li class="nav-item"><a class="nav-link" href="#">INICIO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">ACERCA DE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/AcercaDe">ACERCA DE</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">MODIFICACIONES</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" class="dropdown-item">PERSONAS</a></li>
-                                <li><a href="Alumnos.html" class="dropdown-item">ALUMNOS</a></li>
-                                <li><a href="#" class="dropdown-item">COORDINADORES</a></li>
+                                <li><a href="/Personas" class="dropdown-item">PERSONAS</a></li>
+                                <li><a href="/Alumnos" class="dropdown-item">ALUMNOS</a></li>
+                                <li><a href="/Coordinadores" class="dropdown-item">COORDINADORES</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">FORMATOS</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" class="dropdown-item">3° Evaluacion</a></li>
-                                <li><a href="#" class="dropdown-item">5° Evaluacion</a></li>
-                                <li><a href="#" class="dropdown-item">6° Carta de buena conducta</a></li>
+                                <li><a href="/3eraEv" class="dropdown-item">3° Evaluacion</a></li>
+                                <li><a href="/5taEv" class="dropdown-item">5° Evaluacion</a></li>
+                                <li><a href="/ctaBC" class="dropdown-item">6° Carta de buena conducta</a></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="navbar-nav justify-content-end">
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">NOMBRE
-                                USUARIO</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> <%= data[0].nombres %> <%= data[0].primerApellido %> <%=data[0].segundoApellido %> </a>
                             <ul class="dropdown-menu dropdown-menu-end">
 
                                 <li class="ImagenLogo"><a href="#" class="dropdown-item"><img
                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/800px-User_icon_2.svg.png"
                                             height="80px" alt=""></a></li>
-                                <li><a href="#" class="dropdown-item">5° Evaluacion</a></li>
+                                <li><a href="/AjustesUser" class="dropdown-item">Ajustes</a></li>
                             </ul>
                         </li>
                     </ul>
